@@ -25,7 +25,7 @@ I LOVE
 ## Задача 4 
 Да се напише програма, която приема дължина на образуваща и радиус на основа на вафлена фуния за сладолед, радиус на топка сладолед (полусфера)
 и брой топки и извежда обема на целия сладолед.
-![ice cream](https://www.onceuponachef.com/images/2011/07/Banana-Ice-Cream.jpg)
+![ice cream](https://www.thespruceeats.com/thmb/fnF-lIfmbFhvF0JwwSfDbuWuQDM=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-90053856-588b7aff5f9b5874ee534b04.jpg)
 
 ## Задача 5
 Да се напише програма, която използвайки само дизюнкция и отрицание реализира:
