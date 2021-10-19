@@ -68,7 +68,7 @@ int main()
 	return 0;
 }
 ```
-## **!!!NB**
+### **!!!NB**
 
 ```c++
 #include<iostream>
