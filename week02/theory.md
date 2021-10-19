@@ -68,7 +68,23 @@ int main()
 	return 0;
 }
 ```
+## **!!!NB**
 
+```c++
+#include<iostream>
+
+int main()
+{
+	const int ALLOW_AGE = 18;
+	int age = 16;
+	
+	if (age < ALLOW_AGE)
+	{ 
+		std::cout << "Drink denied" << std::endl;
+	}	
+	return 0;
+}
+```
 
 ### Вложена форма(Nested form)
 ```c++
