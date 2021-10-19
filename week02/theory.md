@@ -29,9 +29,6 @@ int main()
 	return 0;
 }
 ```
-Блок-схема:
-
-![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_if.png)
 
 ## Пълна форма на if
 Синтаксис:
@@ -71,9 +68,7 @@ int main()
 	return 0;
 }
 ```
-Блок-схема:
 
-![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_if_else.png)
 
 ### Вложена форма(Nested form)
 ```c++
@@ -140,7 +135,7 @@ int main()
 	return 0;
 }
 ```
-## Тернарен оператор ?: (Ternary operator)
+# Тернарен оператор ?: (Ternary operator)
 ?: е форма която наподобява конструкцията if - else. Формално ще наричаме оператора ?: **тернарен оператор**.
 
 Синтаксис: 
@@ -166,7 +161,7 @@ int main()
 }
 ```
 
-## Оператор switch(Switch statement)
+# Оператор switch(Switch statement)
 Операторът **switch** позволява тестването на дадена променлива за равенство измежду списък от стойностти. Всяка стойност за проверка се нарича **случай (case).**
 
 Синтаксис:
@@ -189,9 +184,6 @@ switch(<израз|стойност>)
  * при стигане до break, изпълнението на оператора switch се **прекратява и продължава изпълнението на програмата** след него;
  * default е **опционален**, т.е не е от задължителния синтаксис на оператора switch. Той се използва когато никой от изброените условия не се е изпълнило и искаме да отбележим това;
 
-Блок-схема:
-
-![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_switch.png)
 
 ```c++
 #include <iostream>
