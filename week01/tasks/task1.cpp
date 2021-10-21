@@ -7,7 +7,7 @@ int main()
 {
     double sideA, sideB, sideC;
     
-    cout << "Enter 3 numbers." << endl;
+    cout << "Enter 3 numbers:" << endl;
     cin >> sideA >> sideB >> sideC;
     
     bool canBeTriangle = sideA + sideB > sideC && sideB + sideC > sideA && sideC + sideA > sideB;
