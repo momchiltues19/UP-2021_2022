@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int main() {
   double arg1, arg2;
