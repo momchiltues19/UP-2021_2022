@@ -7,7 +7,7 @@ using namespace std;
   
 int main()
 {      	
-  int num;
+  int num = 0;
         
   cout << "Enter a number: ";
   cin >> num;
@@ -163,14 +163,14 @@ using namespace std;
 int main()
 {
 
-	int temp_number;
-	int size_of_sequence;
+	int currentNumber = 0;
+	int sizeOfNumbers = 0;
 
-	cin >> size_of_sequence;
-	for (int i = 0; i < size_of_sequence; i++)
+	cin >> sizeOfNumbers;
+	for (int i = 0; i < sizeOfNumbers; i++)
 	{
-		cin >> temp_number;
-		if (temp_number == 7)
+		cin >> currentNumber;
+		if (currentNumber == 7)
 		{
 			cout << "You're lucky! " << endl;
 			break;
@@ -183,7 +183,7 @@ int main()
 
 
 ### Помощни флагове (flags)
-Освен **break**, можем да използваме помощни флагове(flags) от тип **bool**. Такава променлива(**flag**) служи да маркира промяната на някакво условие, като сменя стойността си от 0 на 1 и обратното. 
+Освен **break**, можем да използваме помощни флагове(flags) от тип **bool**. Такива променливи служат да маркират промяната на някакво условие, като сменят стойността си от 0 на 1 и обратното. 
 
 ```c++
 #include <iostream>
@@ -192,23 +192,23 @@ using namespace std;
 int main()
 {
 
-	int temp_number;
-	int size_of_sequence;
-	bool flag = false; // свалили сме флага
+	int currentNumber = 0;
+	int sizeOfNumbers = 0;
+	bool isCurrentNumber7 = false; // свалили сме флага
 
-	cin >> size_of_sequence;
+	cin >> sizeOfNumbers;
 
-	for (int i = 0; i < size_of_sequence && !flag; i++)
+	for (int i = 0; i < sizeOfNumbers && !isCurrentNumber7; i++)
 	{
-		cin >> temp_number;
-		if (temp_number == 7)
+		cin >> currentNumber;
+		if (currentNumber == 7)
 		{
 			cout << "You're lucky! " << endl;
-			flag = true; // вдигаме флага, така ще прекратим цикъла
+			isCurrentNumber7 = true; // вдигаме флага, така ще прекратим цикъла
 		}
 	}
 
-	if (flag == false) // уведомяваме потребителя, че не сме намерили 7
+	if (isCurrentNumber7 == false) // уведомяваме потребителя, че не сме намерили 7
 		cout << "Sorry! :( " << endl;
 
 	return 0;
@@ -226,13 +226,13 @@ using namespace std;
 int main()
 {
 
-	int temp_number;
+	int currentNumber = 0;
 	int counter = 0;
 	
 	for (int i = 0; i < 10; i++)
 	{
-		cin >> temp_number;
-		if (temp_number % 2 == 0)
+		cin >> currentNumber;
+		if (currentNumber % 2 == 0)
 			continue;
 		counter++;
 	}
