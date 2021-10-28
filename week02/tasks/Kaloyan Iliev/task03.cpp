@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
-using std::cin;
-using std::cout;
+using namespace std;
 
 /*
     assumes correct coeffs
@@ -9,34 +8,34 @@ using std::cout;
 
 int main() 
 {
-    double a, b, c, X1, X2;
+    double coeff_a, coeff_b, coeff_c, x1, x2;
     bool isComplex = false;
     cout << "a = ";
-    cin >> a;
+    cin >> coeff_a;
     cout << "b = ";
-    cin >> b;
+    cin >> coeff_b;
     cout << "c = ";
-    cin >> c;
+    cin >> coeff_c;
     cout << "\n";
-    double D = (b * b) - 4.0 * (a * c);
+    double D = (coeff_b * coeff_b) - 4.0 * (coeff_a * coeff_c);
 
     if (D > 0) 
     {
-        X1 = (-b - sqrt(D)) / (2.0 * a);
-        X2 = (-b + sqrt(D)) / (2.0 * a);
+        x1 = (-coeff_b - sqrt(D)) / (2.0 * coeff_a);
+        x2 = (-coeff_b + sqrt(D)) / (2.0 * coeff_a);
     } 
     else if (D == 0.0) 
     {
-        X1 = X2 = (-b) / (2.0 * a);
+        x1 = x2 = (-coeff_b) / (2.0 * coeff_a);
     } 
     else 
     {
-        std::cout << (-b) / (2.0 * a) << " +/- i" << "sqrt(" << -D << ")" << '/' << 2.0 * a;
+        std::cout << (-coeff_b) / (2.0 * coeff_a) << " +/- i" << sqrt(-D) / 2.0 * coeff_a;
         isComplex = true;
     }
 
     if (!isComplex) {
-        std::cout << "X1 = " << X1 << " X2 = " << X2 << "\n";
+        std::cout << "x1 = " << x1 << " x2 = " << x2 << "\n";
     }
 
     return 0;
