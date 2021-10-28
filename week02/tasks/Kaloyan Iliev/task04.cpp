@@ -4,9 +4,9 @@ using std::cout;
 
 int main() 
 {
-    double first_circle_x, first_circle_y, first_circle_r;
-    double second_circle_x, second_circle_y, second_circle_r;
-    double point_x, point_y;
+    double first_circle_x = 0, first_circle_y = 0, first_circle_r = 0;
+    double second_circle_x = 0, second_circle_y = 0, second_circle_r = 0;
+    double point_x = 0, point_y = 0;
 
     cout << "Enter first circle x and y coordinates and radius:\n";
     cin >> first_circle_x >> first_circle_y >> first_circle_r;
@@ -29,10 +29,6 @@ int main()
         cout << "Point (" << point_x << "," << point_y << ") does not lie on the intersection of circle (" << first_circle_x << "," << first_circle_y 
              << ") and circle (" << second_circle_x << "," << second_circle_y << ").";
     }
-
-    /*
-          alternaive: cout/return boolean value 
-    */
 
     return 0;
 }
