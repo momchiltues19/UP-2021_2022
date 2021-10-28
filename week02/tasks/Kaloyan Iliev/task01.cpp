@@ -2,11 +2,9 @@
 using std::cin;
 using std::cout;
 
-
-
 int main() 
 {
-    int arg1, arg2;
+    double arg1, arg2;
     char operation;
     cout << "Enter vars: ";
     cin >> arg1 >> arg2;
@@ -24,11 +22,16 @@ int main()
         case '*': 
             cout << arg1 << " * " << arg2 << " = " << arg1 * arg2;
             break;
-        case '/': 
+        case '/':
+            if (arg2 == 0) 
+            {
+                cout << "Cannot divide by zero!";
+                return 1;
+            } 
             cout << arg1 << " / " << arg2 << " = " << arg1 / arg2;
             break;
         default: 
-            cout << "invalid operation!";
+            cout << "Invalid operation!";
     }
 
     return 0;
